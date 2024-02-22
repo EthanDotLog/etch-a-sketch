@@ -7,7 +7,39 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  
+  <header>
+    <h2>EthanDotLog's Legally Distinct</h2>
+    <h1>Sketch-a-etch</h1>
+  </header>
+  <main>
+    <div id="screen"></div>
+    <div id="mid-control">
+      <div>
+
+        <input type="radio" id="clicks" value="clicks" name="draw-style"><label>On click</label>
+        <p>Draw Style</p>
+        <input type="radio" id="hover" value="hover" name="draw-style"><label>Hover</label>
+      </div>
+      <div>
+        <label for="colors">Draw Color</label>
+        <select id="colors" name="colors">
+          <option value="shader">Shader</option>
+          <option value="black">Black</option>
+          <option value="rainbow">rainbow</option>
+        </select>
+      </div>
+    </div>
+    <div id="lower-control">
+      <div id="slider-notch">
+        <div id="slider">
+          <input type="number" placeholder="100 max grid">
+          <button>Accept/Clear</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
   <script src="./script.js"></script>
 </body>
 </html>
