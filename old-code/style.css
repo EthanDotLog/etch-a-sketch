@@ -1,0 +1,10 @@
+* {
+
+}
+
+#grid-container {
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+
+}
