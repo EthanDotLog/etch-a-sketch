@@ -12,28 +12,32 @@
     <h1>Sketch-a-etch</h1>
   </header>
   <main>
-    <div id="screen"></div>
-    <div id="mid-control">
-      <div>
-
-        <input type="radio" id="clicks" value="clicks" name="draw-style"><label>On click</label>
-        <p>Draw Style</p>
-        <input type="radio" id="hover" value="hover" name="draw-style"><label>Hover</label>
+    <div id="screen-box"></div>
+    <div id="mid-pannel">
+      <div id="left-control" class="knob">
+          <div class="radio"><input type="radio" id="click" value="click" name="draw-style"><label>On click</label></div>
+          <p>Draw Style</p>
+          <div class="radio reverse"><input type="radio" id="mouseover" value="mouseover" name="draw-style"><label>Hover</label></div>
       </div>
-      <div>
+      <div id="mid-control">
+        <label for="grid-input">how big should your grid be? <em>Your input will be squared</em></label>
+        <input type="number" placeholder="100 max grid" id="grid-input">
+      </div>
+      <div id="right-control" class="knob">
         <label for="colors">Draw Color</label>
         <select id="colors" name="colors">
-          <option value="shader">Shader</option>
-          <option value="black">Black</option>
-          <option value="rainbow">rainbow</option>
+          <option value="default" selected>Select a color style...</option>
+          <option value="shadeStyle">Shader</option>
+          <option value="blackStyle">Black</option>
+          <option value="rainbowStyle">rainbow</option>
         </select>
       </div>
     </div>
     <div id="lower-control">
       <div id="slider-notch">
         <div id="slider">
-          <input type="number" placeholder="100 max grid">
-          <button>Accept/Clear</button>
+          <button id="generate-btn">generate grid</button>
+          <button id="clear-btn">clear</button>
         </div>
       </div>
 

@@ -4,6 +4,7 @@ const submitBtn = document.querySelector('#submit-btn')
 
 const gridContainer = document.createElement('div')
 gridContainer.setAttribute('id', 'grid-container')
+
 const gridSquare = document.querySelector('[id^=square]')
 
 submitBtn.addEventListener('click', function() {
@@ -46,8 +47,6 @@ function printGrid() {
             target.style.opacity = newNum
             console.log(typeof style)
             console.log(newNum)
-
-
         })
     }
     
